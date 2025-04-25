@@ -7,8 +7,8 @@ const int xpin = A3;       // Accelerometer X-axis
 const int LED_PIN = LED_BUILTIN;
 const int BUZZER_PIN = 8;  // Buzzer on pin 8
 
-const unsigned long PUNCH_WINDOW_MS = 500;  // Punch detection window
-const int threshold = 300;      // Threshold for punch detection
+const unsigned long PUNCH_WINDOW_MS = 300;  // Punch detection window
+const int threshold = 400;      // Threshold for punch detection
 const int maxExpected = 1200;   // Max expected value
 
 unsigned long lastBeatTime = 0;
