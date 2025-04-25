@@ -53,12 +53,14 @@ Beat Boxer is a game where players throw real punches detected by Arduino sensor
 ## Project Structure
 
 ```
-beat-boxer/
-├── src/              # Java source files
-├── lib/              # External libraries (including jSSC.jar)
-├── arduino/          # Arduino code files
-├── sounds/           # Music and sound effects
-└── text/             # Game text and configuration files
+BeatBoxer/
+├── java-client/      
+│   ├── src/          # Java source files
+│   ├── lib/          # External libraries (including jSSC.jar)
+│   ├── bin/          # Compiled class files
+│   ├── sounds/       # Music and sound effects
+│   └── text/         # Leaderboard file
+└── arduino/          # Arduino code files
 ```
 
 ## Troubleshooting
