@@ -19,7 +19,7 @@ public class DifficultyManager {
         // Initialize thresholds for difficulty level
         this.thresholds = new HashMap<>();
         thresholds.put(Difficulty.EASY, 150);    // Need 150 points to advance from EASY
-        thresholds.put(Difficulty.MEDIUM, 500);  // Need 500 points to advance from MEDIUM
+        thresholds.put(Difficulty.MEDIUM, 450);  // Need 450 points to advance from MEDIUM
     }
     
     // Check if player can advance to next difficulty
@@ -60,9 +60,9 @@ public class DifficultyManager {
             case EASY:
                 return new DifficultyParams(1.0f, 20, 4000, 6000); // Easy settings
             case MEDIUM:
-                return new DifficultyParams(1.2f, 40, 3000, 4500); // Medium settings
+                return new DifficultyParams(1.2f, 30, 3000, 4500); // Medium settings
             case HARD:
-                return new DifficultyParams(1.4f, 80, 1000, 2500); // Hard settings
+                return new DifficultyParams(1.4f, 40, 1000, 2500); // Hard settings
             default:
                 return new DifficultyParams(1.0f, 20, 4000, 6000); // Default fallback
         }
